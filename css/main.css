@@ -25,8 +25,10 @@ canvas {
 
 #header {
     position:relative;
-    height: 4%;  /* Chnage to 100% */
-    width:4%;    /* Chnage to 100% */
+    height: 100%;  /* Chnage to 100% */
+    width:100%;    /* Chnage to 100% */
+
+    z-index: 100
 }
 
 #header img {
@@ -39,8 +41,18 @@ canvas {
     margin:auto;
 }
 
+
 /* =========== FLUID ============ */
+.fluid-container{
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  margin-left: auto;
+  z-index: 0
+}
+
 .fluid {
+  margin-left: auto;
     
 }
 .fluid::before
@@ -647,6 +659,13 @@ canvas {
   height: 100vh;
   overflow: hidden;
   width: 100%;
+  z-index: 100
   margin: 0 auto;
   position: absolute;
+}
+
+
+.ahead{
+  z-index: 100;
+  position: relative;
 }
