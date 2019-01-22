@@ -118,3 +118,14 @@ canvas {
 );
 
 /* =========== FLUID END ============= */
+
+.bottomleft {
+    position: absolute;
+    bottom: 60px;
+    left: -45px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #263c5a;
+    transform: rotate(90deg);
+
+}
