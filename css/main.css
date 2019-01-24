@@ -1,9 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
 html,
 body {
     margin: 0;
     background-color: #0f1824;
     height: 100%;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 canvas {
@@ -23,6 +28,60 @@ canvas {
 /* ================================================================
 ========================== MAIN BODY ==============================
 =================================================================== */
+
+.hamburger {
+  width: 64px;
+  cursor: pointer;
+  z-index: 999;
+  position: relative;
+  margin-right: 3vw;
+  margin-top: 5vh;
+  float: right;
+}
+
+.overlay-menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9));
+    z-index: 990;
+    opacity: 0;
+    padding: 64px;
+}
+
+.overlay-menu ul{
+    color: whitesmoke;
+    font-size: 3rem;
+    margin: 64px auto 0 auto;
+    width: 50vw;
+    padding: 0;
+    /*transform: translateX(-50%);*/
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.overlay-menu ul li{
+    margin: 30px;
+    
+}
+
+.overlay-menu ul li a {
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 6px;
+    transition: 0.2s;
+    border-bottom: 2px dashed transparent;
+}
+
+.overlay-menu ul li a:hover{
+    color: rgb(240,103,48);
+    border-bottom-color: rgb(240,103,48);
+}
+
 
 #header {
     position: relative;
