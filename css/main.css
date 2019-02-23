@@ -105,10 +105,55 @@ canvas {
     z-index: 100 margin: 0 auto;
     position: absolute;
 }
-.planet {
-    /* width: 5%; --- uncomment to reduce planet size -- */
-    
+/* ====== PLANET ANIMATION ======= */
+.planet1 {
+  -webkit-animation: mymove1 18s ease-in-out infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove1 18s ease-in-out infinite;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
+@-webkit-keyframes mymove1 {
+  from {left: 0px;}
+  to {left: 100px;}
+}
+@keyframes mymove1 {
+  from {left: 0px;}
+  to {left: 100px;}
+}
+
+.planet2 {
+  -webkit-animation: mymove2 18s ease-in-out infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove2 18s ease-in-out infinite;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@-webkit-keyframes mymove2 {
+  from {top: 0px;}
+  to {top: 100px;}
+}
+@keyframes mymove2 {
+  from {top: 0px;}
+  to {top: 100px;}
+}
+
+.astro img{
+    height: 120px;
+    width: auto;
+    transform: rotate(-25deg);
+      -webkit-animation: astrofly 2.5s ease-in-out infinite; /* Safari 4.0 - 8.0 */
+      animation: astrofly 2.5s ease-in-out infinite;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+}
+@-webkit-keyframes astrofly {
+  from {top: 0px;}
+  to {top: 30px;}
+}
+@keyframes astrofly {
+  from {top: 0px;}
+  to {top: 30px;}
+}
+
 .ahead {
     z-index: 100;
     position: relative;
@@ -126,7 +171,6 @@ canvas {
 
 .fluid {
     margin-left: auto;
-
 }
 
 .fluid::before {
@@ -136,10 +180,9 @@ canvas {
     height: 60vh;
     min-height: 200px;
     min-width: 200px;
-    border: 2px solid #65737e; /* #2e476b */
+    border: 2px solid #65737e; /* #2e476b - dark */
     background-size: 1600% 1600%;
-    animation:
-        transform 55s ease-in-out infinite both alternate;
+    animation:transform 55s ease-in-out infinite both alternate;
 }
 
 @keyframes transform {
@@ -174,8 +217,7 @@ canvas {
     }
 }
 
-@use autoprefixer(browsers: "> 3%"
-);
+@use autoprefixer(browsers: "> 3%");
 
 /* =========== FLUID END ============= */
 
