@@ -122,7 +122,7 @@ let animation = bodymovin.loadAnimation({
     autoplay: false,
     animationData: data
 });
-animation.setSpeed(1.5);
+animation.setSpeed(2);
 
 
 let direction = 1;
