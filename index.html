@@ -31,6 +31,10 @@
     ================================================== -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
+    <!-- Font Awesome
+    ================================================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -41,12 +45,12 @@
     
     <div class="overlay-menu">    <!-- MENU LINKS -->
         <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Initiatives</a></li>
-            <li><a href="#">Sponsors</a></li>
-            <li><a href="#">Workshops</a></li>
-            <li><a href="#">Campus Amaassador</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a data-href="About Us/" class="nav-link">About Us</a></li>
+            <li><a data-href="Initiatives/" class="nav-link">Initiatives</a></li>
+            <li><a data-href="Sponsors/" class="nav-link">Sponsors</a></li>
+            <li><a data-href="Workshops/" class="nav-link">Workshops</a></li>
+            <li><a data-href="Campus Ambassador/" class="nav-link">Campus Ambassador</a></li>
+            <li><a data-href="Contact Us/" class="nav-link">Contact Us</a></li>
         </ul>
     </div>
 
@@ -68,12 +72,7 @@
             <a href="#"><img class="ahead planet3" src="images/sat/neptune.png" /></a>
         </div>
     </div>
-    <!--
-    <div class="wrapper">
-        <div style="position: relative;left: 84%;top: 62%;" class="astro">
-            <a href="#"><img class="ahead" src="images/flying_astro.png" /></a>
-        </div>
-    </div> -->
+    
     <!--- =================== HEADER - LOGO =================== -->
     <div id="header"><img src="images/header2.png" /></div>
 
@@ -87,9 +86,30 @@
         <p>&copy; Aaruush Creatives</p>
     </div>
 
+    <!-- ==================Social Links============================== -->
+    <div class="social-icons">
+        <div class="icon-bg"><i class="fa fa-facebook"></i></div>
+        <div class="icon-bg"><i class="fa fa-instagram"></i></div>
+    </div>
+
+    <!-- ======================Fade Animation Overlay================= -->
+    <div class="fadein"></div>
+
     <!-- Particle Script -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.2/lottie.min.js"></script>
+    <script>
+        
+        var navLink = document.getElementsByClassName('nav-link');
+        for (i = 0; i < 6; i++)
+        navLink[i].addEventListener('click', function () {
+            link = this.getAttribute('data-href');
+            document.querySelector('.fadein').classList.add('fadeinanime');
+            setTimeout(function () {
+                window.location.href = link;
+            }, 1000);
+        });
+    </script>
     <script src="js/main.js"></script>
 
 </body>
