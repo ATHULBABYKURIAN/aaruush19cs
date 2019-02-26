@@ -9,7 +9,6 @@ body {
     height: 100%;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    scroll-behavior: smooth;
 }
 
 canvas {
@@ -131,7 +130,8 @@ canvas {
   from {top: 0px;}
   to {top: 100px;}
 }
-/*============
+
+/* astronaut */
 .astro img{
     height: 120px;
     width: auto;
@@ -149,7 +149,6 @@ canvas {
   from {top: 0px;}
   to {top: 30px;}
 }
-===========*/
 
 .ahead {
     z-index: 100;
@@ -215,8 +214,8 @@ canvas {
 }
 
 @use autoprefixer(browsers: "> 3%");
-
 /* =========== FLUID END ============= */
+
 .bottomleft {
     position: absolute;
     bottom: 60px;
@@ -296,14 +295,14 @@ canvas {
   padding: 2px 16px;
 }
 
-.social-icons {
-    color: white;
+/* ============== Social icons ==============*/
+.social-icons{
     position: fixed;
     z-index: 990;
-    bottom: 4px;
+    bottom: 20px;
     left: 50vw;
     transform: translateX(-50%);
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .social-icons i {
@@ -316,13 +315,15 @@ canvas {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    padding: 1px;
     display: inline-block;
     text-align: center;
-    background-color: rgb(19, 17, 17);
+    /*background-color: #293b56;*/
+}
+.icon-bg a {
+    color: rgb(199, 194, 194) !important;
 }
  
 .social-icons i:hover {
     cursor: pointer;
-    color: rgb(199, 194, 194);
+    color: #fff !important;
 }
