@@ -6,11 +6,8 @@
 <!--<![endif]-->
 
 <head>
-
-    <!--- basic page needs
-   ================================================== -->
     <meta charset="utf-8">
-    <title>AARUUSH '19 - Coming Soon</title>
+    <title>AARUUSH '19 - About Us</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -22,7 +19,6 @@
    ================================================== -->
     <link rel="stylesheet" href="../css/main.css">
 
-
     <!-- favicons
 	================================================== -->
     <link rel="icon" type="image/png" href="../images/favicon.ico">
@@ -32,7 +28,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <!-- Font Awesome
-            ================================================== -->
+    ================================================== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -41,19 +37,20 @@
 
     <div class="slideup"></div>
 
-    <div id="particles-js"></div> <!-- STARS -->
+    <div id="particles-js"></div>
 
     <div class="hamburger"></div> <!-- MENU ICON -->
 
     <div class="overlay-menu">
         <!-- MENU LINKS -->
         <ul>
-            <li><a data-href="../About Us/" class="nav-link">About Us</a></li>
-            <li><a data-href="../Initiatives/" class="nav-link">Initiatives</a></li>
-            <li><a data-href="../Sponsors/" class="nav-link">Sponsors</a></li>
-            <li><a data-href="../Workshops/" class="nav-link">Workshops</a></li>
-            <li><a data-href="../Campus Ambassador/" class="nav-link">Campus Ambassador</a></li>
-            <li><a data-href="../Contact Us/" class="nav-link">Contact Us</a></li>
+            <li><a data-href="../index.html" class="nav-link">Home</a></li>
+            <li style="text-decoration: line-through; color: #585f6d;"><a data-href="aboutus.html" class="nav-link">About Us</a></li>
+            <li><a data-href="initiatives.html" class="nav-link">Initiatives</a></li>
+            <li><a data-href="sponsors.html" class="nav-link">Sponsors</a></li>
+            <li><a data-href="workshops.html" class="nav-link">Workshops</a></li>
+            <li><a data-href="ca.html" class="nav-link">Campus Ambassador</a></li>
+            <li><a data-href="contact.html" class="nav-link">Contact Us</a></li>
         </ul>
     </div>
 
@@ -69,17 +66,21 @@
         <p>&copy; Aaruush Creatives</p>
     </div>
 
-    <!-- ======================Fade Animation Overlay===================== -->
+    <!-- ==================== Fade Animation Overlay ================= -->
     <div class="fadeout fadeoutanime" id="fade"></div>
 
-    <!-- ==================Social Links============================== -->
+    <!-- ================== Social Links ============================== -->
     <div class="social-icons">
-        <div class="icon-bg"><i class="fa fa-facebook"></i></div>
-        <div class="icon-bg"><i class="fa fa-instagram"></i></div>
+        <div class="icon-bg"><a href="https://www.facebook.com/aaruush.srm/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true" title="Facebook"></i></a></div>
+        <div class="icon-bg"><a href="https://twitter.com/aaruushsrmist" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true" title="Twitter"></i></a></div>
+        <div class="icon-bg"><a href="https://www.instagram.com/aaruush_srm/" target="_blank"><i class="fa fa-instagram" aria-hidden="true" title="Insagram"></i></a></div>
+        <div class="icon-bg"><a href="https://www.youtube.com/channel/UC6mwWpwkZchii-oyWz0v3dw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true" title="Youtube Channel"></i></a></div>
+        <div class="icon-bg"><a href="https://www.linkedin.com/company/aaruush-srm-university/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" title="Linkedin"></i></a></div>
     </div>
 
     <!-- Particle Script -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.2/lottie.min.js"></script>
     <script>
         var navLink = document.getElementsByClassName('nav-link');
