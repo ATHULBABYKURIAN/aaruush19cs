@@ -43,7 +43,7 @@ h1 {
 h2 {
     font-size: 45px;
     font-weight: 300;
-    color: #633991;
+    color: #fff;
     letter-spacing: -1px;
     margin-bottom: 1rem;
 }
@@ -166,7 +166,6 @@ p.lead {
 
 /* NAVBAR
 ----------------------*/
-
 .nav-menu {
     padding: 1rem 0;
     transition: all 0.3s ease;
@@ -174,8 +173,7 @@ p.lead {
 
 
 .navbar-brand img {
-    height: 70%;
-    width: 70%;
+    width: 40%;
 }
 .nav-menu.is-scrolling,
 .nav-menu.menu-is-open {
@@ -241,6 +239,9 @@ header {
     background-size: cover;
 }
 
+#home h2 {
+}
+
 .bg-gradient {
     
     background-image: linear-gradient(to right top, #051937, #08264a, #0a335d, #084171, #005086);
@@ -248,7 +249,7 @@ header {
 }
 
 .tagline {
-    font-size: 23px;
+    font-size: 33px;
     font-weight: 300;
     color: #fff;
     max-width: 800px;
@@ -257,7 +258,7 @@ header {
 
 .img-holder {
     height: 0;
-    padding-bottom: 10%;
+    padding-bottom: 20%;
     overflow: hidden;
 }
 .home-btn {
