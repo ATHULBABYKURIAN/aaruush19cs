@@ -279,11 +279,12 @@ canvas {
 }
 
 .card {
-    width: 70%;
+    width: 68%;
     display: inline-block;
     margin-top: 10vh;
     background-color: rgba(0,0,0, 0.6);
     transition: 0.3s;
+    margin-left: 50px;
 }
 
 .white-text {
@@ -317,7 +318,7 @@ section img {
     bottom: 20px;
     left: 50vw;
     transform: translateX(-50%);
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .social-icons i {
@@ -327,12 +328,11 @@ section img {
 }
 
 .icon-bg {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     display: inline-block;
     text-align: center;
-    /*background-color: #293b56;*/
 }
 .icon-bg a {
     color: rgb(199, 194, 194) !important;
