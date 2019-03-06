@@ -172,7 +172,7 @@ canvas {
 .fluid-container {
     position: absolute;
     top: 20%;
-    left: 15%;
+    left: 12%;
     margin-left: auto;
     z-index: 0
 }
@@ -184,8 +184,8 @@ canvas {
 .fluid::before {
     content: '';
     display: block;
-    width: 120vh;
-    height: 60vh;
+    width: 140vh;
+    height: 55vh;
     min-height: 200px;
     min-width: 200px;
     border: 2px solid #65737e; /* #2e476b - dark */
