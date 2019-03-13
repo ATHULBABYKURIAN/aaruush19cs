@@ -148,11 +148,11 @@ canvas {
 
 /* astronaut */
 .astro img{
-    height: 120px;
+    height: 300px;
     width: auto;
-    transform: rotate(-25deg);
-      -webkit-animation: astrofly 2.5s ease-in-out infinite;
-      animation: astrofly 2.5s ease-in-out infinite;
+    transform: rotate(0deg);
+      -webkit-animation: astrofly 2.8s ease-in-out infinite;
+      animation: astrofly 2.8s ease-in-out infinite;
       animation-iteration-count: infinite;
       animation-direction: alternate;
 }
