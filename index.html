@@ -6,9 +6,6 @@
 <!--<![endif]-->
 
 <head>
-
-    <!--- basic page needs
-   ================================================== -->
     <meta charset="utf-8">
     <title>AARUUSH '19 - Coming Soon</title>
     <meta name="description" content="">
@@ -22,7 +19,6 @@
    ================================================== -->
     <link rel="stylesheet" href="css/main.css">
 
-
     <!-- favicons
 	================================================== -->
     <link rel="icon" type="image/png" href="images/favicon.ico">
@@ -34,10 +30,20 @@
     <!-- Font Awesome
     ================================================== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        /* phones */
+        @media (min-width: 320px) and (max-width: 480px) 
+        {
+            #particle-js 
+            {
+            }
+        }
+    </style>
 
 </head>
 
-<body style="overflow: hidden">
+<body>
 
     <div id="particles-js"></div> <!-- STARS -->
     
@@ -59,19 +65,19 @@
     <!-- ===================== PLANETS ======================= -->
     <div class="wrapper">
         <div style="position: relative;left: 10%;top: 40%;">
-            <a href="#"><img class="ahead planet2" src="images/sat/earth.png" /></a>
+            <a href="#"><img class="ahead planet2 planet" src="images/sat/earth.png" /></a>
         </div>
     </div>
 
     <div class="wrapper">
         <div style="position: relative;left: 45%;top: 15%;">
-            <a href="#"><img class="ahead planet1" src="images/sat/jupiter.png" /></a>
+            <a href="#"><img class="ahead planet1 planet" src="images/sat/jupiter.png" /></a>
         </div>
     </div>
     
     <div class="wrapper">
         <div style="position: relative;left: 45%;top: 70%;">
-            <a href="#"><img class="ahead planet3" src="images/sat/neptune.png" /></a>
+            <a href="#"><img class="ahead planet3 planet" src="images/sat/neptune.png" /></a>
         </div>
     </div>
     
