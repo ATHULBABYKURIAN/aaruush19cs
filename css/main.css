@@ -368,10 +368,9 @@ section img {
     .wrapper {
         visibility: hidden;
     }
-    body {
-        overflow: hidden;
+    .bottom-left {
+        font-size: 20px;
     }
-    
 }
 
 /* tablets */
