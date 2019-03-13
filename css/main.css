@@ -97,17 +97,6 @@ canvas {
     width: 45%;
 }
 
-/* Mobile view */
-@media(max-width: 600px) {
-    #header img {
-        width: 75%;
-    }
-
-    .planet1, .planet2, .planet3{
-        transform: scale(0.8);
-    }
-}
-
 .wrapper {
     height: 100vh;
     overflow: hidden;
@@ -368,9 +357,18 @@ section img {
     .wrapper {
         visibility: hidden;
     }
-    .bottom-left {
-        font-size: 20px;
+    .bottomleft {
+        font-size: 12px;
     }
+    #srm_logo {
+        margin-top: 40px;
+        height: 5%;
+        width: auto;
+    }
+    #header img {
+        width: 95%;
+    }
+
 }
 
 /* tablets */
