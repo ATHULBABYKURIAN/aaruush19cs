@@ -368,6 +368,9 @@ section img {
     .wrapper {
         visibility: hidden;
     }
+    body {
+        overflow: hidden;
+    }
     
 }
 
