@@ -13,7 +13,6 @@ body {
 
 canvas {
     display: block;
-    vertical-align: bottom;
 }
 
 
@@ -32,6 +31,8 @@ canvas {
     width: 8%;
     margin-left: 10px;
 }
+
+/* ========== MENU ========= */
 .hamburger {
   width: 50px;
   cursor: pointer;
@@ -79,6 +80,8 @@ canvas {
     text-decoration: underline;
     cursor: pointer;
 }
+
+/* ======= header img ========*/
 #header {
     position: relative;
     height: 100%;
@@ -135,7 +138,7 @@ canvas {
   to {top: 100px;}
 }
 
-/* astronaut */
+/* ======= astronaut =======*/
 .astro img{
     height: 300px;
     width: auto;
@@ -160,7 +163,7 @@ canvas {
 }
 
 
-/* =========== FLUID ============ */
+/* ================ ORBIT ================ */
 .fluid-container {
     position: absolute;
     top: 20%;
@@ -218,8 +221,9 @@ canvas {
 }
 
 @use autoprefixer(browsers: "> 3%");
-/* =========== FLUID END ============= */
+/* =========== ORBIT END ============= */
 
+/* copyright */
 .bottomleft {
     position: absolute;
     bottom: 60px;
@@ -284,9 +288,9 @@ canvas {
     width: 68%;
     display: inline-block;
     margin-top: 10vh;
-    background-color: rgba(0,0,0, 0.6);
-    transition: 0.3s;
     margin-left: 50px;
+    background-color: rgba(0,0,0, 0.6);
+    
 }
 
 .white-text {
@@ -344,37 +348,3 @@ section img {
     cursor: pointer;
     color: #fff !important;
 }
-
-
-
-/* ======== responsive =========== */
-
-/* phones */
-@media (min-width: 320px) and (max-width: 480px) {
-    .fluid-container {
-        visibility: hidden;
-    }
-    .wrapper {
-        visibility: hidden;
-    }
-    .bottomleft {
-        font-size: 12px;
-    }
-    #srm_logo {
-        margin-top: 40px;
-        height: 5%;
-        width: auto;
-    }
-    #header img {
-        width: 95%;
-    }
-
-}
-
-/* tablets */
-@media only screen and (min-width: 768px) {
-    
-}
-
-
-

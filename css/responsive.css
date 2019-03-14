@@ -1,0 +1,73 @@
+/* =============== phone =============== */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    
+    /* overlay-menu */
+    .hamburger {
+        width: 40px;
+        margin-right: 5vw;
+        margin-top: 4.5vh;
+    }
+    .overlay-menu ul {
+        font-size: 1.5em;
+        margin-top: 40%;
+    }
+    
+    /* orbit */
+    .fluid-container {
+        visibility: hidden;
+    }
+    
+    /* planets,astronaut */
+    .wrapper {
+        visibility: hidden;
+    }
+    
+    /* copyright */
+    .bottomleft {
+        font-size: 12px;
+    }
+    
+    /* srm logo - top left */
+    #srm_logo {
+        margin-top: 40px;
+        height: 6%;
+        width: auto;
+    }
+    
+    /* aaruush main logo */
+    #header img {
+        width: 95%;
+    }
+    
+    /*pages setting*/
+    .card {
+        width: 90%;
+        margin: 0;
+    }
+    section p{
+        text-align: left;
+        font-size: 12px;
+    }    
+    section p span{
+        font-size: 12px !important;
+        text-decoration: underline;
+    }
+    
+    /* used in sponsor section */
+    section img {
+        width: 100%;
+    }
+}
+
+
+
+
+/* ============== tablets =================== */
+
+@media only screen and (min-width: 768px) {
+    
+    
+    
+    
+}
